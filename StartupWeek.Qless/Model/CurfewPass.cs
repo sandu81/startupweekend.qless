@@ -13,6 +13,11 @@ namespace StartupWeek.Qless
         public int ID { get; set; }
 
         /// <summary>
+        /// The User the curfew pass belongs to
+        /// </summary>
+        public int UserId { get; set; }
+
+        /// <summary>
         /// Start Time for the Pass
         /// </summary>
         public DateTime StartDate { get; set; }

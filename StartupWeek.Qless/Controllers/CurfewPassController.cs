@@ -22,9 +22,16 @@ namespace StartupWeek.Qless.Controllers
         }
 
         [HttpGet]
-        public CurfewPass Get(CurfewPassRequest request)
+        public IEnumerable<CurfewPass> Get(int userId)
         {
-            return new CurfewPass();
+            return new List<CurfewPass>();
+        }
+
+
+        [HttpPost]
+        public IEnumerable<CurfewPass> Post(CurfewPassRequest request)
+        {
+            return new List<CurfewPass>();
         }
     }
 }
