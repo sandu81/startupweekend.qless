@@ -27,6 +27,11 @@ namespace StartupWeek.Qless
         /// </summary>
         public int TimeLimit { get; set; }
 
+        /// <summary>
+        /// List of cities the user is allowed to be in
+        /// </summary>
+        public List<string> AllowedLocations { get; set; }
+
 
     }
 }
